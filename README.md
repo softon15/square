@@ -1,4 +1,3 @@
-
 ## SquareBlog
 
 Web realizada para la prueba por Marc Ibi Alvarez.
@@ -6,41 +5,31 @@ Web realizada para la prueba por Marc Ibi Alvarez.
 ## Instrucciones para la instalación
 
 - `git clone https://github.com/softon15/square.git`
-- cd square
-- composer install
+- `cd square`
+- `composer install`
 - Renombrar .env.example a .env
 - Rellenar el .env con la información para la conexión a la base de datos
 - Crear una base de datos con el nombre que se haya puesto en el .env
-- php artisan migrate
-- php artisan schedule:run (Esto es para ejecutar al menos una vez la lectura de posts)
-- php artisan key:generate
+- `php artisan migrate`
+- `php artisan schedule:run` (Esto es para ejecutar al menos una vez la lectura de posts)
+- `php artisan key:generate`
 
-Ahora ya puedes lanzar php artisan serve. La web debería estar funcionando en http://127.0.0.1:8000
+Ahora ya puedes lanzar `php artisan serve`. La web debería estar funcionando en `http://127.0.0.1:8000`. 
+Para programar la lectura automática e inserción de los nuevos posts, bastaría con crear una nueva tarea en el crontab del servidor. 
+Ejemplo: `* * * * * php /path/to/artisan schedule:run 1>> /dev/null 2>&1`
+Está programado para ejecutar la lectura de nuevos posts cada 15 minutos. 
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/)**
-- **[OP.GG](https://op.gg)**
 
-## Contributing
+## Observaciones
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- Para las páginas de "frontend" (Home y Detalle Post) se ha usado Vue. 
+- Para las páginas de gestión de usuario (sus propios blogs y añadir uno nuevo) se ha usado Blade.
+- Las páginas de login y registro se han generado automáticamente con el comando `php artisan make:auth`, creando así las tablas y vistas necesarias.
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Comentarios
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+A priori la web es funcional, pero soy consciente de las limitaciones que tiene y de que no está hecha con las mejores prácticas. 
+Mi única experiencia con Laravel fue de un solo mes hace 2 años, en la versión 5, así que seguramente lo que he hecho se podrá hacer mejor y de forma más simple. 
+Además, no tengo experiencia en Vue. He intentado usarlo en el front porque creo que es la mejor opción, pero soy consciente de que la estructura y la forma de importar los css y js no son las correctas. 
+Sin embargo, me ha gustado bastante la experiencia ya que considero que Laravel es el Framework con más potencial de PHP. Creo que con unos patrones de buenas práticas en poco tiempo podría controlar Laravel con la misma fluidez que Symfony, que es el Framework en el que tengo una sólida experiencia. 
