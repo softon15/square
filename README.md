@@ -24,6 +24,7 @@ Está programado para ejecutar la lectura de nuevos posts cada 15 minutos.
 
 - Para las páginas de "frontend" (Home y Detalle Post) se ha usado Vue. 
 - Para las páginas de gestión de usuario (sus propios blogs y añadir uno nuevo) se ha usado Blade.
+- En el dashboad una vez estás logeado, la tabla de posts del usuario tiene ordenación pinchando en los campos de 'Title' y 'Date'. He usado el siguiente repositorio para hacerlo de forma automática: https://github.com/Kyslik/column-sortable.git
 - Las páginas de login y registro se han generado automáticamente con el comando `php artisan make:auth`, creando así las tablas y vistas necesarias.
 
 
