@@ -3,7 +3,19 @@
 
 Web realizada para la prueba por Marc Ibi Alvarez.
 
-## Instrucciones de funcionamiento
+## Instrucciones para la instalación
+
+- git clone https://github.com/softon15/square.git
+- cd square
+- composer install
+- Renombrar .env.example a .env
+- Rellenar el .env con la información para la conexión a la base de datos
+- Crear una base de datos con el nombre que se haya puesto en el .env
+- php artisan migrate
+- php artisan schedule:run (Esto es para ejecutar al menos una vez la lectura de posts)
+- php artisan key:generate
+
+Ahora ya puedes lanzar php artisan serve. La web debería estar funcionando en http://127.0.0.1:8000
 
 - **[Vehikl](https://vehikl.com/)**
 - **[Tighten Co.](https://tighten.co)**
