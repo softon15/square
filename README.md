@@ -5,7 +5,7 @@ Web realizada para la prueba por Marc Ibi Alvarez.
 
 ## Instrucciones para la instalación
 
-- git clone https://github.com/softon15/square.git
+- `git clone https://github.com/softon15/square.git`
 - cd square
 - composer install
 - Renombrar .env.example a .env
