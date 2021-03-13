@@ -29,7 +29,6 @@ Está programado para ejecutar la lectura de nuevos posts cada 15 minutos.
 
 ## Comentarios
 
-A priori la web es funcional, pero soy consciente de las limitaciones que tiene y de que no está hecha con las mejores prácticas. 
 Mi única experiencia con Laravel fue de un solo mes hace 2 años, en la versión 5, así que seguramente lo que he hecho se podrá hacer mejor y de forma más simple. 
 Además, no tengo experiencia en Vue. He intentado usarlo en el front porque creo que es la mejor opción, pero soy consciente de que la estructura y la forma de importar los css y js no son las correctas. 
 Sin embargo, me ha gustado bastante la experiencia ya que considero que Laravel es el Framework con más potencial de PHP. Creo que con unos patrones de buenas práticas en poco tiempo podría controlar Laravel con la misma fluidez que Symfony, que es el Framework en el que tengo una sólida experiencia. 
